@@ -1,5 +1,6 @@
 import React from "react";
 import FadeIn from './fadein';
+import { Link } from "react-router";
 
 const Advantages = () => {
   return (
@@ -103,12 +104,11 @@ const Advantages = () => {
 
         {/* CTA */}
         <div className="mt-14 text-center">
-          <a
-            href="#signup"
-            className="inline-flex items-center justify-center px-12 py-4 text-base font-semibold text-black bg-green-500 rounded-md hover:bg-green-400 transition"
-          >
-            Find Out If You Qualified
-          </a>
+          
+            <Link to={"/quiz/1"} className="px-8 py-3 text-white bg-green-600 rounded-md font-semibold hover:bg-green-700 transition">
+              Find Out If You Qualified
+            </Link>
+          
 
           <p className="mt-4 text-xs text-gray-500">
             Limited access. Membership capped at 70 traders.
