@@ -1,8 +1,10 @@
 import React from "react";
+import FadeIn from './fadein';
 
 const Testimonial = () => {
   return (
     <section className="w-full bg-[#0B0F1A] py-24">
+        <FadeIn duration = {100} >
       <div className="max-w-6xl mx-auto px-4 text-gray-300">
         {/* Testimonial */}
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#111827] to-[#0F172A] border border-gray-800 rounded-3xl p-10 md:p-14">
@@ -56,6 +58,7 @@ const Testimonial = () => {
           </a>
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };

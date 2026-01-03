@@ -1,8 +1,10 @@
 import React from "react";
+import FadeIn from './fadein';
 
 const Offer = () => {
   return (
     <section className="w-full bg-white py-20 md:py-24">
+        <FadeIn duration = {100} >
       <div className="max-w-5xl mx-auto px-4">
         {/* Card */}
         <div className="bg-gradient-to-br from-[#111827] to-[#0F172A] border border-gray-800 rounded-3xl p-8 md:p-14 text-center text-gray-300">
@@ -56,6 +58,7 @@ const Offer = () => {
           </div>
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };

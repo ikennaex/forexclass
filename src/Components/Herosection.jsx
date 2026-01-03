@@ -1,8 +1,10 @@
 import React from "react";
+import FadeIn from './fadein';
 
 const Herosection = () => {
   return (
     <section className="w-full bg-gradient-to-b from-gray-50 to-white">
+      <FadeIn duration = {100} >
       <div className="max-w-6xl mx-auto px-4 py-20 flex flex-col items-center text-center">
         {/* Headline */}
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight max-w-3xl">
@@ -29,6 +31,7 @@ const Herosection = () => {
         </div>
 
         {/* Trust note */}
+        <FadeIn duration = {400} >
         <ul className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-600">
           <li className="flex items-center gap-2">
             <span className="text-green-600">✓</span>
@@ -51,7 +54,9 @@ const Herosection = () => {
             We Have Got You Covered
           </li>
         </ul>
+        </FadeIn>
       </div>
+      </FadeIn>
     </section>
   );
 };

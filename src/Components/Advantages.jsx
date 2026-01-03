@@ -1,8 +1,10 @@
 import React from "react";
+import FadeIn from './fadein';
 
 const Advantages = () => {
   return (
     <section className="w-full bg-[#0B0F1A] py-24">
+        <FadeIn duration = {100} >
       <div className="max-w-6xl mx-auto px-4 text-gray-200">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
@@ -15,6 +17,10 @@ const Advantages = () => {
           <p className="mt-4 text-gray-400 text-base md:text-lg">
             Nice question. Let me break it down for you.
           </p>
+        </div>
+
+        <div className="my-5">
+            <img src="images/trading.jpg" alt="" />
         </div>
 
         {/* Advantage Cards */}
@@ -109,6 +115,7 @@ const Advantages = () => {
           </p>
         </div>
       </div>
+      </FadeIn>
     </section>
   );
 };
