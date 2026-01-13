@@ -1,13 +1,97 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Basic -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>forex-landingpage</title>
+    <meta name="theme-color" content="#0B0F1A" />
+
+    <!-- Title -->
+    <title>
+      Digital Assets Insight | Smart Forex Signals in Minutes a Day
+    </title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Digital Assets Insight helps traders follow premium forex signals in under 5 minutes a day. Limited access. Apply to qualify."
+    />
+    <meta
+      name="keywords"
+      content="forex signals, forex trading, digital assets, trading signals, forex mentorship"
+    />
+    <meta name="author" content="Digital Assets Insight" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Digital Assets Insight" />
+    <meta
+      property="og:description"
+      content="Follow premium forex signals with minimal time commitment. Apply to qualify."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://didgitalassetsinsight.info" />
+    <meta property="og:image" content="/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Digital Assets Insight" />
+    <meta
+      name="twitter:description"
+      content="You don’t need hours to trade forex. Our members trade in minutes."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Base Styles -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background-color: #0b0f1a;
+        color: #ffffff;
+        scroll-behavior: smooth;
+      }
+
+      #root {
+        min-height: 100vh;
+      }
+
+      .app-loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-size: 14px;
+        color: #9ca3af;
+        letter-spacing: 0.04em;
+      }
+    </style>
   </head>
+
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="app-loading">Loading Digital Assets Insight…</div>
+    </div>
+
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Optional Funnel Protection -->
+    <!--
+    <script>
+      document.addEventListener("contextmenu", (e) => e.preventDefault());
+    </script>
+    -->
   </body>
 </html>
