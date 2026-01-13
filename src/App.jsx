@@ -7,6 +7,7 @@ import QuizThree from './Components/Quiz/QuizThree'
 import QuizFour from './Components/Quiz/QuizFour'
 import Congratulations from './Components/Congratulations'
 import NotQualified from './Components/NotQualified'
+import FinalPage from './Components/FinalPage'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/quiz/3' element = {<QuizThree />} />
         <Route path='/quiz/4' element = {<QuizFour />} />
         <Route path='/quiz/congratulations' element = {<Congratulations />} />
+        <Route path='/quiz/finalpage' element = {<FinalPage />} />
         <Route path='/quiz/notqualified' element = {<NotQualified />} />
       </Routes>
     </div>

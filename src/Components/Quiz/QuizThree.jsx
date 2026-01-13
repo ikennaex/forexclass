@@ -27,7 +27,7 @@ const QuizThree = () => {
           {/* Options */}
           <div className="mt-10 space-y-4">
             <Link to={"/quiz/4"} replace>
-              <button className="w-full py-4 rounded-xl bg-green-500 text-black text-base font-bold hover:bg-green-400 transition">
+              <button className="w-full my-4 py-4 rounded-xl bg-green-500 text-black text-base font-bold hover:bg-green-400 transition">
                 Yes
               </button>
             </Link>

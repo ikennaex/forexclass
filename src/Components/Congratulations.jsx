@@ -1,12 +1,33 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
+import { baseUrl } from "../baseUrl";
+import { useNavigate } from "react-router";
 
 const Congratulations = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate()
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post(`${baseUrl}userinfo`, { email, name });
+      console.log(res);
+      alert(res.data)
+      setEmail("")
+      setName("")
+
+      navigate("/quiz/finalpage")
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <section className="w-full min-h-screen bg-[#0B0F1A] flex items-center justify-center px-4">
       <div className="w-full max-w-lg text-center">
         {/* Card */}
         <div className="bg-gradient-to-br from-[#111827] to-[#0F172A] border border-gray-800 rounded-3xl p-10 md:p-14">
-          
           {/* Headline */}
           <h1 className="text-3xl md:text-4xl font-extrabold text-green-500">
             Congratulations!
@@ -21,14 +42,16 @@ const Congratulations = () => {
           </p>
 
           {/* Form */}
-          <form className="mt-8 flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4">
             <input
+              onChange={(e) => setName(e.target.value)}
               type="text"
               placeholder="Name"
               className="w-full px-4 py-3 rounded-xl bg-[#111827] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
               required
             />
             <input
+              onChange={(e) => setEmail(e.target.value)}
               type="email"
               placeholder="Email"
               className="w-full px-4 py-3 rounded-xl bg-[#111827] border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 transition"

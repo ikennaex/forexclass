@@ -15,7 +15,7 @@ const QuizOne = () => {
           
           {/* Question */}
           <h2 className="text-2xl md:text-3xl font-extrabold text-white leading-tight">
-            Do you own a smartphone with
+            Do you own a smartphone with {" "}
             <br className="hidden md:block" />
             reliable internet access?
           </h2>
@@ -29,7 +29,7 @@ const QuizOne = () => {
           <div className="mt-10 space-y-4">
             <Link to={"/quiz/2"}>
             <button
-              className="w-full py-4 rounded-xl bg-green-500 text-black text-base font-bold hover:bg-green-400 transition"
+              className="w-full my-4 py-4 rounded-xl bg-green-500 text-black text-base font-bold hover:bg-green-400 transition"
             >
               Yes
             </button>
